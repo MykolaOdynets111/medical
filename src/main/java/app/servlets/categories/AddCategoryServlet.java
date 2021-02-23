@@ -14,7 +14,7 @@ public class AddCategoryServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("views/add_category.jsp");
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("/web/views/add_category.jsp");
         requestDispatcher.forward(req, resp);
     }
 

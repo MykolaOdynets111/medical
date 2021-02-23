@@ -17,7 +17,7 @@ public class ListCategoriesServlet extends HttpServlet {
         List<String> names = model.list();
         req.setAttribute("category_name", names);
 
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("views/list_categories.jsp");
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("/web/views/list_categories.jsp");
         requestDispatcher.forward(req, resp);
     }
 
